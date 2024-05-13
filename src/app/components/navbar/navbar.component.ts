@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+constructor(){
+
+}
+
+activeMenu = false;
+counter = 0;
+
+toggleMenu(){
+  this.activeMenu = !this.activeMenu;
+}
+
+
+
 }

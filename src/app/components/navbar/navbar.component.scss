@@ -1,0 +1,130 @@
+.show-mobile {
+  display: block;
+  box-shadow: 0px 2px 5px rgb(black, .2);
+  background: lightgray;
+
+  >div {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      border: 1px solid lightgrey;
+      background: transparent;
+      color: white;
+      border-radius: .5rem;
+
+
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+
+      li {
+        margin: 1rem;
+      }
+    }
+  }
+
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transform: translateX(-100%);
+    transition: all ease-out .5s;
+
+    &.active {
+      transform: translateX(0);
+    }
+
+    ul {
+      list-style: none;
+      margin: .5rem;
+    }
+  }
+}
+
+.imgg {
+  width: 2rem;
+}
+
+.hide-mobile {
+  display: none;
+  box-shadow: 0px 2px 5px rgb(black, .2);
+  background-color: gray;
+
+  >div {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+
+    ul {
+      display: contents;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        margin: 0 .2em;
+        color: white;
+      }
+    }
+  }
+
+  .sesionInfo {
+    display: flex;
+    align-items: center;
+
+    .account {
+      color: white;
+    }
+
+    .user {
+
+      padding-left: .8rem;
+      padding-right: .8rem;
+
+    }
+
+    button {
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .show-mobile {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 64em) {
+
+  .show-mobile {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+
+}

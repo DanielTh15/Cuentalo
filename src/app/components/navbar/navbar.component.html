@@ -1,13 +1,47 @@
 <div class="show-mobile">
   <div>
-     <button>
-         <img src="" alt="">
-     </button>
+    <button (click)="toggleMenu()">
+      <img src="../../../assets/icon_menu.svg" alt="">
+    </button>
+    <a href="">
+      <img src="../../../assets/usuario.png" alt="" class="imgg">
+    </a>
   </div>
-  <div>
-
+  <div class="side-menu" [class.active]="activeMenu">
+    <button (click)="toggleMenu()">Close</button>
+    <ul>
+      <a href="">
+        <li>Stories</li>
+      </a>
+      <a href="">
+        <li>Categories</li>
+      </a>
+      <a href="">
+        <li>Relacionado</li>
+      </a>
+    </ul>
   </div>
 </div>
-<div class="hide-mobile">
 
+<div class="hide-mobile">
+  <div>
+    <nav>
+      <a href="">
+      </a>
+      <ul>
+        <li><a href="">Stories</a></li>
+        <li><a href="">Categories</a></li>
+        <li><a href="">Relacionado</a></li>
+      </ul>
+    </nav>
+    <div class="sesionInfo">
+      <div class="account">dtheveningdiaz@gmail.com</div>
+      <div class="user">
+        <a href="">
+          <img src="../../../assets/usuario.png" alt="" class="imgg">
+        </a>
+      </div>
+      <button>*</button>
+    </div>
+  </div>
 </div>
