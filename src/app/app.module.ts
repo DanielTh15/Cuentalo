@@ -7,13 +7,19 @@ import { ImgComponent } from './components/img/img.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { StoryComponent } from './components/story/story.component';
+import { StoriesComponent } from './components/stories/stories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ImgComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    FooterComponent,
+    StoryComponent,
+    StoriesComponent
   ],
   imports: [
     BrowserModule,
