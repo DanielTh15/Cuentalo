@@ -11,22 +11,25 @@ export class StoriesServiceService {
   url: string = 'http://localhost:8080/cuentalo/app/api/story/';
 
   constructor(private httpClient: HttpClient) { }
+  getOne(story: Story): Observable<Story> {
+    return this.httpClient.get<Story>(this.url + story);
+  }
 
   list(): Observable<any[]> {
-    return this.httpClient.get<Story[]>(this.url + 'all')
+    return this.httpClient.get<Story[]>(this.url + 'all');
   }
 
   save(story: Story): Observable<Story> {
-    return this.httpClient.post<Story>(this.url + 'save', story)
+    return this.httpClient.post<Story>(this.url + 'save', story);
 
   }
 
   delete(idStory: number): Observable<any> {
-    return this.httpClient.delete<any>(this.url + "delete/" + idStory)
+    return this.httpClient.delete<any>(this.url + "delete/" + idStory);
   }
 
   update(story: Story): Observable<Story> {
-    return this.httpClient.put<Story>(this.url + '', story)
+    return this.httpClient.put<Story>(this.url + '', story);
   }
 
 }
