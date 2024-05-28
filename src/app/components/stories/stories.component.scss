@@ -1,0 +1,31 @@
+.envoltorio {
+  padding: .2rem;
+}
+
+.grilla {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem
+}
+
+@media screen and (min-width: 26.063em) and (max-width: 39.9375em) {
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+}

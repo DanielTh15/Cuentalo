@@ -1,6 +1,7 @@
 import { Component, Input, Output } from '@angular/core';
 import { Story } from 'src/app/models/StoryModel';
 
+
 @Component({
   selector: 'app-story',
   templateUrl: './story.component.html',
@@ -14,7 +15,18 @@ export class StoryComponent {
     content: '',
     date: '',
     authorId: '',
-    soundId: 0
+    soundId: 0,
+    writer: {
+      writerId: '',
+      name: '',
+      lastName: '',
+      phone: '',
+      mail: '',
+      city: '',
+      address: ''
+    },
+    categories: []
+
   }
 
 

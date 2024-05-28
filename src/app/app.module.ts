@@ -10,6 +10,7 @@ import { LoginComponent } from './components/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { StoryComponent } from './components/story/story.component';
 import { StoriesComponent } from './components/stories/stories.component';
+import { ShorStoryPipe } from './pipes/shor-story.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { StoriesComponent } from './components/stories/stories.component';
     LoginComponent,
     FooterComponent,
     StoryComponent,
-    StoriesComponent
+    StoriesComponent,
+    ShorStoryPipe
   ],
   imports: [
     BrowserModule,

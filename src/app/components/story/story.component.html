@@ -1,1 +1,5 @@
-<p>story works!</p>
+<div class="cardd">
+  <h3> {{ story.tittle }} </h3>
+  <p> {{ story.content | shorStory:100 }} </p>
+  <span> Autor: {{ story.writer.name + story.writer.lastName}} </span>
+</div>
